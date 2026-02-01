@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shop (placeholder) — Leaf & Ladder demo site." />
+  <title>Shop — Leaf & Ladder</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="announce" role="region" aria-label="Announcement">
+    <div class="container announce__inner">FREE 48-hour delivery on all orders over £35 (demo)</div>
+  </div>
+
+  <header class="header">
+    <div class="container nav" aria-label="Primary">
+      <a class="brand" href="./index.html" aria-label="Leaf and Ladder home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">
+          <span>Leaf &amp; Ladder</span>
+          <small>Matcha Super Latte</small>
+        </span>
+      </a>
+
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="./shop.html">Shop</a>
+        <a href="./learn.html">Learn</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--secondary" href="./shop.html">Try it now</a>
+        <button class="hamburger" type="button" data-menu-open aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer" data-drawer data-open="false" aria-hidden="true">
+    <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="Menu">
+      <div class="drawer__top">
+        <div class="brand" aria-label="Leaf and Ladder">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__name">
+            <span>Leaf &amp; Ladder</span>
+            <small>Matcha Super Latte</small>
+          </span>
+        </div>
+        <button class="drawer__close" type="button" data-menu-close aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="drawer__links" aria-label="Mobile navigation">
+        <a href="./index.html">Home</a>
+        <a href="./shop.html">Shop</a>
+        <a href="./learn.html">Learn</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <div class="stack">
+        <a class="btn btn--primary" href="./shop.html">Try it now</a>
+        <p class="fineprint">Demo build: marketing-only, no checkout.</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="pageHero">
+      <div class="container">
+        <div class="card">
+          <div class="crumbs">
+            <a href="./index.html">Home</a>
+            <span aria-hidden="true">/</span>
+            <span>Shop</span>
+          </div>
+          <h1 style="margin-top: 10px;">Shop</h1>
+          <p class="muted" style="margin-top: 10px;">
+            Placeholder product grid for v1. Buttons won’t charge you — this demo is marketing-only.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="sectionTitle">
+          <div>
+            <h2>Popular blends</h2>
+            <p>Three example SKUs to make the site feel real. Swap in your own products later.</p>
+          </div>
+          <span class="tag">Coming soon</span>
+        </div>
+
+        <div class="grid products">
+          <article class="card">
+            <div class="card__kicker">Super Latte</div>
+            <div class="card__title">Original Matcha Blend</div>
+            <p class="card__body">Creamy, smooth, and balanced for daily energy.</p>
+            <div class="who">
+              <span class="price">£29</span>
+              <button class="btn btn--secondary" type="button">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__kicker">Super Latte</div>
+            <div class="card__title">Vanilla Cloud</div>
+            <p class="card__body">Lightly sweet vanilla notes with the same calm focus.</p>
+            <div class="who">
+              <span class="price">£31</span>
+              <button class="btn btn--secondary" type="button">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__kicker">Super Latte</div>
+            <div class="card__title">Cacao Matcha</div>
+            <p class="card__body">A cozy chocolatey twist — still clean and dairy-free.</p>
+            <div class="who">
+              <span class="price">£31</span>
+              <button class="btn btn--secondary" type="button">Add to cart</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="stack">
+        <div class="brand">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__name">
+            <span>Leaf &amp; Ladder</span>
+            <small>Matcha Super Latte</small>
+          </span>
+        </div>
+        <p class="muted">Built for calm clarity and sustained energy — a cozy ritual you’ll actually keep.</p>
+        <p class="fineprint">© 2026 Leaf &amp; Ladder (demo).</p>
+      </div>
+
+      <div class="stack">
+        <h3>Quick links</h3>
+        <div class="footer__links">
+          <a href="./shop.html">Shop</a>
+          <a href="./learn.html">Learn</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="stack">
+        <h3>Sign up and save</h3>
+        <div class="newsletter">
+          <p class="muted">Get launches, recipes, and limited drops. (UI only in this demo.)</p>
+          <div class="fieldRow">
+            <input class="input" type="email" placeholder="you@example.com" aria-label="Email address" />
+            <button class="btn btn--primary" type="button">Submit</button>
+          </div>
+          <p class="fineprint">No spam. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./index.js" defer></script>
+</body>
+</html>
+

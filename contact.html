@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact — Leaf & Ladder demo site." />
+  <title>Contact — Leaf & Ladder</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="announce" role="region" aria-label="Announcement">
+    <div class="container announce__inner">FREE 48-hour delivery on all orders over £35 (demo)</div>
+  </div>
+
+  <header class="header">
+    <div class="container nav" aria-label="Primary">
+      <a class="brand" href="./index.html" aria-label="Leaf and Ladder home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">
+          <span>Leaf &amp; Ladder</span>
+          <small>Matcha Super Latte</small>
+        </span>
+      </a>
+
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="./shop.html">Shop</a>
+        <a href="./learn.html">Learn</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--secondary" href="./shop.html">Try it now</a>
+        <button class="hamburger" type="button" data-menu-open aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer" data-drawer data-open="false" aria-hidden="true">
+    <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="Menu">
+      <div class="drawer__top">
+        <div class="brand" aria-label="Leaf and Ladder">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__name">
+            <span>Leaf &amp; Ladder</span>
+            <small>Matcha Super Latte</small>
+          </span>
+        </div>
+        <button class="drawer__close" type="button" data-menu-close aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="drawer__links" aria-label="Mobile navigation">
+        <a href="./index.html">Home</a>
+        <a href="./shop.html">Shop</a>
+        <a href="./learn.html">Learn</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <div class="stack">
+        <a class="btn btn--primary" href="./shop.html">Try it now</a>
+        <p class="fineprint">Demo build: marketing-only, no checkout.</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="pageHero">
+      <div class="container">
+        <div class="card">
+          <div class="crumbs">
+            <a href="./index.html">Home</a>
+            <span aria-hidden="true">/</span>
+            <span>Contact</span>
+          </div>
+          <h1 style="margin-top: 10px;">Contact</h1>
+          <p class="muted" style="margin-top: 10px;">
+            Send us a note. In v1 this form is UI-only; we can wire it to email or a backend next.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="split">
+          <div class="split__panel">
+            <h2>Support</h2>
+            <p class="muted" style="margin-top: 12px;">For questions, email:</p>
+            <p style="margin-top: 10px; font-weight: 950;">
+              <a href="mailto:support@leafandladder.example">support@leafandladder.example</a>
+            </p>
+            <div class="checklist" style="margin-top: 16px;">
+              <div class="check">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Order questions (demo)</span>
+              </div>
+              <div class="check">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Ingredients &amp; usage info</span>
+              </div>
+              <div class="check">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Partnerships</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="split__panel">
+            <h2>Send a message</h2>
+            <form class="stack" style="margin-top: 14px;" onsubmit="return false;">
+              <label class="sr-only" for="name">Name</label>
+              <input class="input" id="name" name="name" type="text" placeholder="Name" autocomplete="name" />
+
+              <label class="sr-only" for="email">Email</label>
+              <input class="input" id="email" name="email" type="email" placeholder="Email" autocomplete="email" />
+
+              <label class="sr-only" for="msg">Message</label>
+              <textarea class="input" id="msg" name="msg" rows="5" placeholder="How can we help?" style="border-radius: 18px; padding: 14px;"></textarea>
+
+              <button class="btn btn--primary" type="submit">Send (UI only)</button>
+              <p class="fineprint">This demo doesn’t submit anywhere yet.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="stack">
+        <div class="brand">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__name">
+            <span>Leaf &amp; Ladder</span>
+            <small>Matcha Super Latte</small>
+          </span>
+        </div>
+        <p class="muted">Built for calm clarity and sustained energy — a cozy ritual you’ll actually keep.</p>
+        <p class="fineprint">© 2026 Leaf &amp; Ladder (demo).</p>
+      </div>
+
+      <div class="stack">
+        <h3>Quick links</h3>
+        <div class="footer__links">
+          <a href="./shop.html">Shop</a>
+          <a href="./learn.html">Learn</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="stack">
+        <h3>Sign up and save</h3>
+        <div class="newsletter">
+          <p class="muted">Get launches, recipes, and limited drops. (UI only in this demo.)</p>
+          <div class="fieldRow">
+            <input class="input" type="email" placeholder="you@example.com" aria-label="Email address" />
+            <button class="btn btn--primary" type="button">Submit</button>
+          </div>
+          <p class="fineprint">No spam. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./index.js" defer></script>
+</body>
+</html>
+
